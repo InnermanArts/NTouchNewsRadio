@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="@android:color/transparent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.something.dennisthicklin.ntouchnewsradio.MainActivity"
+        android:background="@drawable/splash_background"
+        android:contentDescription="layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/bar"
+            android:contentDescription="bar"
+            android:background="@android:color/background_dark"
+            >
+            <ImageButton
+                android:id="@+id/menu_button"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:background="@drawable/menu_button"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/headerlogo"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/bar"
+            android:layout_above="@+id/footer"
+            android:background="@drawable/info" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/footer"
+            android:background="@android:color/background_dark"
+            android:layout_alignParentBottom="true"
+            >
+            <Button
+                android:id="@+id/liveRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#000000"
+        app:itemTextColor="#ffffff"
+        android:foreground="@drawable/ripple_effect"
+        android:id="@+id/navigationView"
+        app:menu="@menu/sidebar_menu">
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

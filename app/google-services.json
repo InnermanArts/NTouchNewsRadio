@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "130783763488",
+    "firebase_url": "https://ntouch-37f60.firebaseio.com",
+    "project_id": "ntouch-37f60",
+    "storage_bucket": "ntouch-37f60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130783763488:android:4087b9d6a972ecbc",
+        "android_client_info": {
+          "package_name": "com.something.dennisthicklin.ntouchnewsradio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130783763488-042jvsp2croc0m9rr6li3gg4ads7oll4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVRQM2ZaCJcNMis1EKS4ZDoZBbapJSFmI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
